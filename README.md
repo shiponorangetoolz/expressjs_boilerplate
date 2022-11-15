@@ -110,18 +110,20 @@ REDIS_PASSWORD=your-password
 ```
 specs\
 src\
- |--config\         # Environment variables and configuration related things
- |--controllers\    # Route controllers (controller layer)
- |--dao\            # Data Access Object for models
- |--db\             # Migrations and Seed files
- |--models\         # Sequelize models (data layer)
- |--routes\         # Routes
- |--services\       # Business logic (service layer)
- |--helper\         # Helper classes and functions
- |--validations\    # Request data validation schemas
- |--app.js          # Express app
- |--cronJobs.js     # Job Scheduler
- |--index.js        # App entry point
+ |--config\           # Environment variables and configuration related things
+ |--constants\        # Global constants related things
+ |--controllers\      # Route controllers (controller layer)
+ |--DataAccessObject\ # Data Access Object for models
+ |--database\         # Migrations and Seed files
+ |--grpc\             # Grpc configuration for client or server
+ |--models\           # Sequelize models (data layer)
+ |--routes\           # Routes
+ |--services\         # Business logic (service layer)
+ |--helper\           # Helper classes and functions
+ |--validations\      # Request data validation schemas
+ |--app.js            # Express app
+ |--cronJobs.js       # Job Scheduler
+ |--index.js          # App entry point
 ```
 
 ## License
